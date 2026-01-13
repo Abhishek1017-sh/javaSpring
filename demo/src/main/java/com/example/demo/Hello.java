@@ -3,20 +3,18 @@ package com.example.demo;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.sql.Struct;
-
 @RestController
-public class hello {
+public class Hello {
     @GetMapping("/")
-    public String Hello(){
+    public String hello(){
         return "This is the first line";
     }
     @GetMapping("/bye")
-    public String Bye(){
+    public String bye(){
         return "Bye";
     }
     @GetMapping("/java")
-    public String Java(){
+    public String java(){
         return "Java";
     }
 }
